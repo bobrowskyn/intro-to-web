@@ -1,0 +1,143 @@
+/*a:text-decoration
+{
+  text-decoration: none;
+}
+
+
+
+a:link {
+  color:#ff6e00
+
+
+}
+
+a:visited {
+  color: #9800ff;
+  
+}
+
+a:focus {
+  background: #9800ff;
+  outline-color: red;
+  outline-style: dotted;
+}
+
+a:hover { 
+
+  background: #9800ff;
+ 
+}
+
+a:active {
+  background: #ff6e00;
+  outline-color: red;
+  outline-style: 25px dotted;
+ 
+}
+
+a {
+  position: relative;
+}
+*/
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p{ color:#3fff00  } 
+
+h1 {
+color:#ff6e00;
+text-align: center;
+outline-color: red;
+}
+
+h2 {
+text-decoration: line-through;
+color:#ff6e00;
+text-align: center;
+outline-color: red;
+}
+
+/*div {
+background-color:black;
+width: 1000px;
+border: 1000px #ff9000;
+padding: 100px;
+margin: 100px;
+color:#ff6e00;
+font-size: 25px; 
+}*/
+
+.relative {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+}
+.absolute {
+  position: relative;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  }
+
+.rotatedText {
+    position: relative;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+    border: 10px solid #000000;
+
+    background-color:black;
+    width: 1000px;
+    border: 1000px #ff9000;
+    padding-top: 1000px;
+    margin: 100px;
+    color:#9800ff;
+    font-size: 25px; 
+}
+
+.rotatedText1 {
+    background: black;
+    -webkit-transition: background 2s; /* Safari */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+    transition: background 2s, transform 2s;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.rotatedText1:hover {
+background: #9800ff;
+-ms-transform: rotate(-180deg); /* IE 9 */
+-webkit-transform: rotate(-180deg); /* Safari */
+transform: rotate(-180deg); 
+}
+
+.linkzzz {
+  font-size: 100px;
+ 
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: black;
+  transition: background 2s, transform 2s;
+  
+}
+.linkzzz:hover {
+  font-size: 100px;
+ 
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: #3fff00 ;
+  
+}
+a {
+   text-decoration: none;
+}
+

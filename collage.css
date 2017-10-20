@@ -1,0 +1,281 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-font-smoothing: ease-in-out;
+}
+
+/* type */
+
+body {
+    font-family:helvetica, sans-serif;
+    text-align: left;
+    font-size: 45px;
+    overflow-x: hidden;
+    background-image: url("images/head2.gif");
+}
+
+/* structure */
+
+#container {
+	width: 100%;
+	padding: 0px 0px;
+	margin: auto;
+	font-weight: 300;
+}
+
+#container p {
+	margin-bottom: 0px;
+	position: relative;
+}
+
+#container-2 {
+	width: 100%;
+	padding: 0px 0px;
+	margin: auto;
+	font-weight: 300;
+}
+
+/* hover states for images */
+
+#image-paragraph img {
+	z-index: 10;
+
+	position:absolute;
+	max-width: 200px;
+	opacity: 0;
+	-webkit-transition: all 5s ease-in-out;
+}
+
+p#image-paragraph:hover img {
+	opacity: 10;
+
+}
+
+/* each image is given its own transition delay, so they occur in an order when hovered on */
+
+p#image-paragraph #image-1 {
+	top: 40px;
+	left: 30px;
+	position:relative;
+
+
+	-webkit-transition-delay: 0s;
+}
+
+p#image-paragraph #image-2 {
+	right: 10px;
+	bottom: 70px;
+position:relative;
+
+	-webkit-transition-delay: 0.1s;
+}
+
+p#image-paragraph #image-3 {
+	left: 300px;
+	bottom: -60px;
+position:relative;
+
+	-webkit-transition-delay: .2s;
+}
+
+p#image-paragraph #image-4 {
+	right: 90px;
+	top: -100px;
+position:relative;
+
+	-webkit-transition-delay: .3s;
+}
+
+p#image-paragraph #image-5 {
+	top: 40px;
+	left: 30px;
+	position:relative;
+
+	-webkit-transition-delay: 0s;
+}
+
+p#image-paragraph #image-6 {
+	right: 10px;
+	bottom: 70px;
+	position:relative;
+
+	-webkit-transition-delay: 0.1s;
+}
+
+p#image-paragraph #image-7 {
+	left: 300px;
+	bottom: -60px;
+	position:relative;
+	-webkit-transition-delay: .2s;
+}
+
+p#image-paragraph #image-8 {
+	right: 90px;
+	top: -100px;
+	position:relative;
+	-webkit-transition-delay: .3s;
+}
+
+p#image-paragraph #image-9 {
+	top: 40px;
+	left: 30px;
+	position:relative;
+	-webkit-transition-delay: 0s;
+}
+
+p#image-paragraph #image-10 {
+	right: 10px;
+	bottom: 70px;
+	position:relative;
+	-webkit-transition-delay: 0.1s;
+}
+
+p#image-paragraph #image-11 {
+	left: 600px;
+	top: 800px;
+	position:relative;
+	-webkit-transition-delay: .2s;
+}
+
+p#image-paragraph #image-12 {
+	left: 150px;
+	top: 300px;
+	position:relative;
+	-webkit-transition-delay: .3s;
+}
+/* hovering on the #shape-paragraph, adjusts the shape behind it */
+
+#shape-paragraph {
+  display: absolute;
+	position: top right;
+
+}
+
+#square {
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: 75%;
+    margin-top: -130px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: black;
+
+	-webkit-transform: rotate(45deg);
+	-webkit-transition: all 1000ms ease-in-out;
+
+}
+
+#shape-paragraph:hover #square {
+	background-color: orange;
+	border-radius: 500px;
+
+	-webkit-transform: scale(2.25);
+}
+
+/* hovering on the #shape itself, adjusts the square's color and shape */
+
+
+#square2 {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-bottom: 80px;
+    background-color: black;
+	-webkit-transition: all 1000ms ease-in-out;
+
+}
+
+#square2:hover{
+	background-color: red;
+	border-radius: 800px;
+
+	-webkit-transform: scale(5.00);
+}
+
+
+
+/* dimensional hovers */
+
+#three-dimensional {
+  position: relative;
+    z-index: 5;
+}
+
+#screenshot {
+    width: 1000px;
+    position: absolute;
+	top: -50px;
+	left: calc(50% - 400px);
+	display: block;
+	filter: blur(15px);
+	z-index: 10;
+	transition: 250ms all;
+	animation: rotating 45s linear infinite;
+}
+
+#three-dimensional:hover #screenshot {
+    filter: blur(0px);
+    z-index: 10;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate3d(3, -1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(3, -1, 0, 360deg);
+  }
+}
+
+#
+
+.top {
+	z-index: 10;
+	position: relative;
+}
+
+
+#three-dimensional-2 {
+    z-index: 5;
+}
+
+#screenshot {
+    width: 500px;
+    position: relative;
+	top: -50px;
+	left: calc(50% - 400px);
+	display: block;
+	filter: drop-shadow(25px);
+	z-index: 10;
+	transition: 250ms all;
+	animation: rotating 45s linear infinite;
+}
+
+#three-dimensional-2:hover #screenshot {
+    filter: blur(0px);
+    z-index: 10;
+    position:relative;
+    opacity: 10
+}
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate3d(3, -1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(3, -1, 0, 360deg);
+  }
+}
+
+#
+
+
+
+
+.top {
+	z-index: 10;
+	position: relative;
+}
