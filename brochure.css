@@ -1,0 +1,13 @@
+
+.mouse {
+	color: black;
+	cursor: url('images/forkknife.png'), auto;
+}
+
+
+img {
+  position: fixed;
+  transition: opacity .5s ease-in;
+}
+
+img + img { opacity: 0; }
