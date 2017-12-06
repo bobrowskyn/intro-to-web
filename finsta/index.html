@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>panoptig</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js">
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<meta name="theme-color" content="#ffffff">
+
+  <script>
+    $( function() {
+      $( ".draggable" ).draggable();
+    });
+  </script>
+</head>
+<body>
+	<iframe id="switch1" ancestor-source="self"  referrerpolicy="origin-when-cross-origin" src="https://www.are.na/noah-bobrowsky/laugh-out-loud">
+    Frames are not supported on your browser.</iframe>
+
+	<div class="w-100 pv5"/>
+  <div id="nav">
+
+	<nav>
+		<ul>
+			<li class="draggable clickme active">
+				<div class="circle__inner">
+					<div class="circle__wrapper">
+						<div class="circle__content">
+							<a class="MenuLink" onclick="document.getElementById('switch1').src='https://www.are.na/noah-bobrowsky/jesus-take-the-wheel'">jesus take the wheel
+              </a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="draggable clickme">
+				<div class="circle__inner">
+					<div class="circle__wrapper">
+						<div class="circle__content">
+							<a class="MenuLink" onclick="document.getElementById('switch1').src='https://www.are.na/noah-bobrowsky/god-is-great'">
+							god is great </a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="draggable clickme">
+				<div class="circle__inner">
+					<div class="circle__wrapper">
+						<div class="circle__content">
+							<a class="MenuLink" onclick="document.getElementById('switch1').src='https://www.are.na/noah-bobrowsky/murica'">murica</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="draggable clickme">
+				<div class="circle__inner">
+					<div class="circle__wrapper">
+						<div class="circle__content">
+							<a class="MenuLink" onclick="document.getElementById('switch1').src='https://www.are.na/noah-bobrowsky/white-savior-complex'">White Savior Complex </a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="draggable clickme">
+				<div class="circle__inner">
+					<div class="circle__wrapper">
+						<div class="circle__content">
+							<a class="MenuLink" onclick="document.getElementById('switch1').src='https://www.are.na/noah-bobrowsky/drumpf'">Drumpf</a>
+						</div>
+					</div>
+				</div>
+			</li>
+            <li class="draggable clickme">
+				<div class="circle__inner">
+					<div class="circle__wrapper">
+						<div class="circle__content">
+							<a class="MenuLink" onclick="document.getElementById('switch1').src='https://www.are.na/noah-bobrowsky/starter-packs-1512436488'">Starter packs</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+<script type="text/javascript">
+  $("a").click(function(){
+    $(".active").removeClass('active');
+    $(this).closest('.draggable').addClass("active");
+    $(this).addClass("active");
+  });
+</script>
+
+<script>
+	$('.draggable').each(function(i,el){
+	  var tLeft = Math.floor(Math.random()*1000),
+	      tTop  = Math.floor(Math.random()*700);
+	  $(el).css({left: tLeft, top: tTop});
+	});
+</script>
+</body>
+</html>
